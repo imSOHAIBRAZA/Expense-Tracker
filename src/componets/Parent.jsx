@@ -1,12 +1,23 @@
 import React from 'react';
+import Balance from './Balance';
 import ExpenseList from './ExpenseList';
 import AddExpense from './AddExpense';
-import TotalExpense from './TotalExpense';
+import IncomeExpense from './IncomeExpense';
+
+
+
+// Header
+// Balance
+// IncomeExpense
+// TransactionList
+//     Transaction
+// AddTransaction
 
 function Parent() {
     return (
         <div>
-            <TotalExpense/>
+            <Balance/>
+            <IncomeExpense/>
             <ExpenseList/>
             <AddExpense/>
             
