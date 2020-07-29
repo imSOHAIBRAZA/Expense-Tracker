@@ -5,14 +5,14 @@ import ExpenseContext from '../store/ExpenseContext'
 function Balance() {
     const ExpenseData = useContext(ExpenseContext);
 
-    let TotalBalance = 0 ;
+    let totalBalance = 0 ;
     ExpenseData.map(v=>{
-        return TotalBalance = TotalBalance + v.amount;
+        return totalBalance = totalBalance + v.amount;
     })
 
     return (
         <div>
-            <h2>Total: Rs.{TotalBalance}</h2>
+            <h2>Total Balance: Rs.{totalBalance > 0 ? totalBalance : 0}</h2>
         </div>
     );
 }
